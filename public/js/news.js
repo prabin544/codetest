@@ -15,8 +15,9 @@ $(document).ready(function(){
 
 
             },
-            error:function(){
-                alert("Some error occured");
+            error:function(xhr){
+                var err = JSON.parse(xhr.responseText);
+                alert(err.message);
             }
         })
 
@@ -38,8 +39,9 @@ $(document).ready(function(){
 
 
         },
-        error:function(){
-            alert('Some error occured');
+        error:function(xhr){
+            var err = JSON.parse(xhr.responseText);
+            alert(err.message);
         }
     })
 
