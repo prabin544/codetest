@@ -1,24 +1,14 @@
 <div class="header">
 	<Row>
-		<col><h6>Trending News</h6></Col>
+		<col><h3>You are viewing Trending News retrieved from NY Times API</h3></Col>
 		<col>
-			<a href="/logout" class="btn btn-danger">Logout</a>
+			
 		</Col>
 	</Row>
-	</div>
+<a href="/logout" class="btn logOutBtn">Logout</a>
+</div>
 
-	<div class="search-header">
-		<div class="row">
-			<div class="offset-md-4 col-md-4">
-				<h2 class="lead text-md-center">Search for any topic</h2><br>
-				<input type="text" class="form-control" name="" id="search_term"><br>
-				<button class="btn btn-danger btn-block" id="search"><i class="fa fa-search"></i> Search</button>
-			</div>
-		</div>	
-	</div>
-
-	<div class="container">
-		<div class="row" id="result" >
-		</div>
-	</div>
-    <script src="/js/news.js"></script>
+<div class="container">
+	<div class="row" id="result" ></div>
+</div>
+<script src="/js/news.js"></script>
