@@ -23,10 +23,7 @@ $(document).ready(function(){
 
     })
 
-
-
     $.ajax({
-        //url:"https://newsapi.org/v2/top-headlines?country=jp&apiKey=ff4fdc1a967240ca9d03b810d90e64ff",
         url:"https://api.nytimes.com/svc/topstories/v2/world.json?api-key=FG4ikXBDwp0kgd1YsnyH0B2VmrDDZuD9",
         success:function(data){
             console.log(data.results)

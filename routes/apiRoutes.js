@@ -66,9 +66,5 @@ module.exports = function(app) {
       .catch((err) => console.log(err));
   });
 
-//logout
-app.get("/logout", authenticateUser, (req, res) => {
-  req.session.user = null;
-  res.redirect("/login");
-});
+
 }

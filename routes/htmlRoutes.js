@@ -21,7 +21,15 @@ module.exports = function(app) {
     })
 
     .get("/home", authenticateUser, (req, res) => {
-    res.render("home", { user: req.session.user });
+    res.render("home", { 
+        user: req.session.user,
+        style: 'home.css'
     });
+    })
+    //logout
+    .get("/logout", authenticateUser, (req, res) => {
+    req.session.user = null;
+    res.redirect("/login");
+  });
 };
 
