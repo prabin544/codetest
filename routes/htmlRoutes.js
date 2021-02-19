@@ -29,7 +29,7 @@ module.exports = function(app) {
     //logout
     .get("/logout", authenticateUser, (req, res) => {
     req.session.user = null;
-    res.redirect("/login");
+    res.redirect("/");
   });
 };
 

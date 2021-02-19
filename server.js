@@ -7,22 +7,6 @@ const app = express();
 
 connectDB()
 
-// // mongdb cloud connection is here
-// mongoose
-//   .connect("mongodb://localhost/codetest", {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//     useCreateIndex: true,
-//     useFindAndModify: false,
-//   })
-//   .then(() => {
-//     console.log("connected to mongodb cloud! :)");
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
-
-// middlewares
 app.use(express.urlencoded({ extened: true }));
 app.use(express.static("public"));
 //app.set("view engine", "ejs");
